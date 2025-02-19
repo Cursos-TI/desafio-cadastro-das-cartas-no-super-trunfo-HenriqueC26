@@ -8,11 +8,11 @@ int main() {
 
     printf("Digite os dados da primeira carta:\n");
     printf("Estado (A-H): ");
-    scanf(" %c", &estado1); // O espaço antes de %c consome qualquer caractere de nova linha
+    scanf(" %c", &estado1);
     printf("Código da carta: ");
     scanf("%s", codigo1);
     printf("Nome da Cidade: ");
-    scanf(" %[^\n]", nomeCidade1); // Corrigido para ler até a nova linha
+    scanf(" %[^\n]", nomeCidade1);
     printf("População: ");
     scanf("%d", &populacao1);
     printf("Área (em km²): ");
