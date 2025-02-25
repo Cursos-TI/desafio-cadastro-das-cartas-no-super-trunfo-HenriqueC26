@@ -12,7 +12,7 @@ int main() {
     printf("Estado (A-H): ");
     scanf(" %c", &estado1);
     printf("Código da carta: ");
-    scanf("%s", codigo1);
+    scanf("%s", &codigo1);
     printf("Nome da Cidade: ");
     scanf(" %[^\n]", nomeCidade1);
     printf("População: ");
@@ -28,7 +28,7 @@ int main() {
     printf("Estado (A-H): ");
     scanf(" %c", &estado2);
     printf("Código da carta: ");
-    scanf("%s", codigo2);
+    scanf("%s", &codigo2);
     printf("Nome da Cidade: ");
     scanf(" %[^\n]", nomeCidade2);
     printf("População: ");
