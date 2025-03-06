@@ -29,7 +29,7 @@ int main (){
     printf("Área em Km²: "); 
     scanf(" %f", &areakm); 
 
-    printf("PIB em bilhões: "); 
+    printf("PIB em bilhões: ");
     scanf(" %f", &pib); 
 
     printf("Número de pontos turisticos: ");
