@@ -92,6 +92,31 @@ int main (){
     printf("Vencedor em PIB per capta: Carta %d\n", (pibpercapta1 > pibpercapta2) * 1 + (pibpercapta1 <= pibpercapta2) * 2);
     printf("Vencedor em Super Poder: Carta %d\n", (superpoderc1 > superpoderc2) * 1 + (superpoderc1 <= superpoderc2) * 2);
 
+        // Inserindo if-else (população, area, PIB,pontos turisticos)
+
+    if(populacao > populacao2){
+        printf("Vencedor em população: Carta 1\n");
+    }else{
+        printf("Vencedor em ppopulação: Carta 2\n");
+    }
+
+    if(areakm > areakm2){
+        printf("Vencedor em Area: Carta 1\n");
+    }else{
+        printf("Vencedor em Area: Carta 2\n");
+    }
+
+    if(pib > pib2){
+        printf("Vencedor em PIB: Carta 1\n");
+    }else{
+        printf("Vencedor em PIB: Carta 2\n");
+    }
+
+    if(pontosturisticos > pontosturisticos2){
+        printf("Vencedor em pontos turisticos: Carta 1\n");
+    } else{
+        printf("Vencedor em pontos turisticos: Carta 2\n");
+    }
 
     return 0; 
 }
