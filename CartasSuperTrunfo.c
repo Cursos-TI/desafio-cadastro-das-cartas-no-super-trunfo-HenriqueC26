@@ -97,7 +97,7 @@ int main (){
     if(populacao > populacao2){
         printf("Vencedor em população: Carta 1\n");
     }else{
-        printf("Vencedor em ppopulação: Carta 2\n");
+        printf("Vencedor em população: Carta 2\n");
     }
 
     if(areakm > areakm2){
@@ -117,6 +117,68 @@ int main (){
     } else{
         printf("Vencedor em pontos turisticos: Carta 2\n");
     }
+
+    int carta1, carta2;
+    
+
+    printf("Escolha uma opção:\n");
+    printf("1. População\n");
+    printf("2. Área\n");
+    printf("3. PIB\n");
+    printf("4. Pontos Turísticos\n");
+    printf("Escolha para Carta 1: ");
+    scanf("%d", &carta1);
+    printf("Escolha para Carta 2: ");
+    scanf("%d", &carta2);
+
+    switch (carta1)
+    {
+    case 1:
+        printf("Carta 1: População\n");
+        break;
+    case 2:
+        printf("Carta 1: Área\n");
+        break;
+    case 3:
+        printf("Carta 1: PIB\n");
+    case 4:
+        printf("Carta 1: Pontos Turisticos\n");
+        break;
+    }
+
+    switch (carta2)
+    {
+    case 1:
+        printf("Carta 2: População\n");
+        break;
+    case 2:
+        printf("Carta 2: Área\n");
+        break;
+    case 3:
+    printf("Carta 2: PIB\n");
+        break;
+    case 4:
+    printf("Carta 2: Pontos Turisticos\n");
+        break;
+    default:
+    printf("Opção inválida para Carta 2!\n");
+    }
+
+    if (carta2 == carta1)
+    {
+        printf("*** Você empatou! ***\n");
+    }else if ((carta1 == 1) && (carta2 == 3) ||
+                (carta2 == 2) && (carta1 == 4) ||
+                (carta2 == 3) && (carta1 == 1) ||
+                (carta2 == 4) && (carta1 == 2))
+
+    {
+        printf(" *** Parabéns, você ganhou! ***\n");
+    }   else{
+        printf(" *** Você perdeu! ***\n");
+    }   
+    
+
 
     return 0; 
 }
